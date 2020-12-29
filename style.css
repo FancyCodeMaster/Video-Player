@@ -15,4 +15,6 @@ body {
 }
 
 /* Main Container */
-.main-container
+.main-container {
+    display : none;
+}
