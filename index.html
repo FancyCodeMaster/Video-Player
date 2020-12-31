@@ -20,44 +20,51 @@
         <!-- Bottom Container -->
         <div class="bottom-container" id="bottom-container">
             <!-- Progress -->
-            <div class="progress" id="progress">
-                <!-- Progress Bar -->
-                <div class="progress-bar" id="progress-bar"></div>
-            </div>
-            <!-- Bottom left icons -->
-            <div class="bottom-left">
-                <!-- Play/Pause -->
-                <div class="play" id="play">
-                    <i class="fas fa-play" id="play-button"></i>
+            <div class="progress-container">
+                <div class="progress" id="progress">
+                    <!-- Progress Bar -->
+                    <div class="progress-bar" id="progress-bar"></div>
                 </div>
-                <!-- Volume  -->
-                <div class="volume" id="volume">
-                    <i class="fas fa-volume-up" id="volume-button"></i>
-                    <!-- Volume Range -->
-                    <div class="volume-range" id="volume-range">
-                        <!-- Volume Bar -->
-                        <div class="volume-bar" id="volume-bar"></div>
+            </div>
+            <!-- Bottom Icons -->
+            <div class="bottom-icons" id="bottom-icons">
+                <!-- Bottom left icons -->
+                <div class="bottom-left">
+                    <!-- Play/Pause -->
+                    <div class="play" id="play">
+                        <i class="fas fa-play" id="play-button" title="Play"></i>
+                    </div>
+                    <!-- Volume  -->
+                    <div class="volume" id="volume">
+                        <div class="volume-icon-container">
+                            <i class="fas fa-volume-up" id="volume-button"></i>
+                        </div>
+                        <!-- Volume Range -->
+                        <div class="volume-range" id="volume-range">
+                            <!-- Volume Bar -->
+                            <div class="volume-bar" id="volume-bar"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Bottom Right Icons -->
-            <div class="bottom-right">
-                <!-- Speed Selector -->
-                <select name="speed" id="speed" class="speed">
-                    <option value="0.5">0.5 x</option>
-                    <option value="0.75">0.75 x</option>
-                    <option value="1" selected>1 x</option>
-                    <option value="1.5">0.5 x</option>
-                    <option value="1.2">0.5 x</option>
-                </select>
-                <!-- Time Display -->
-                <div class="time-container">
-                    <span class="current-time" id="current-time">00:00 / </span>
-                    <span class="total-time" id="total-time">01:56</span>
-                </div>
-                <!-- Full Screen Mode -->
-                <div class="full-screen" id="full-screen">
-                    <i class="fas fa-full-expand" id="fullscreen-button"></i>
+                <!-- Bottom Right Icons -->
+                <div class="bottom-right">
+                    <!-- Speed Selector -->
+                    <select name="speed" id="speed" class="speed">
+                        <option value="0.5">0.5 x</option>
+                        <option value="0.75">0.75 x</option>
+                        <option value="1" selected>1 x</option>
+                        <option value="1.5">1.5 x</option>
+                        <option value="2">2 x</option>
+                    </select>
+                    <!-- Time Display -->
+                    <div class="time-container">
+                        <span class="current-time" id="current-time"></span>
+                        <span class="total-time" id="total-time"></span>
+                    </div>
+                    <!-- Full Screen Mode -->
+                    <div class="full-screen" id="full-screen">
+                        <i class="fas fa-expand" id="fullscreen-button"></i>
+                    </div>
                 </div>
             </div>
         </div>

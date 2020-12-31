@@ -4,6 +4,8 @@ html {
     box-sizing: border-box;
 }
 
+.fas {color : #fff;}
+
 body {
     margin: 0;
     padding : 0;
@@ -11,10 +13,135 @@ body {
     display: flex;
     justify-content : center;
     align-items : center;
-    color : #fff;
 }
 
 /* Main Container */
 .main-container {
-    display : none;
+    position: relative;
+    height : 80vh;
+    /* background-color: red; */
+}
+
+/* Video */
+.video {
+    height : 100%;
+    width : 100%;
+}
+
+.bottom-container:hover {
+    opacity: 1;
+    transition: opacity 0.1s ease-out;
+}
+
+/* Bottom Container */
+.bottom-container {
+    position: absolute;
+    top : 474px;
+    height : 15%;
+    width : 100%;
+    background-color: rgba(112, 90, 90, 0.445);
+    opacity : 0;
+    transition : opacity 0.5s ease-out 2s;
+}
+
+/* Progress Container */
+.progress-container {
+    height : 50%;
+    width : 100%;
+    /* background-color: pink; */
+}
+
+.progress {
+    position: relative;
+    height : 8px;
+    width : 95%;
+    top : 30px;
+    margin : 0 auto;
+    background-color: #c1c1c1;
+    border-radius: 8px;
+    cursor : pointer;
+}
+
+.progress-bar {
+    height : 8px;
+    width : 60%;
+    background-color: purple;
+    border-radius: 8px;
+    cursor : pointer;
+}
+
+/* Bottom Icons */
+.bottom-icons {
+    height : 50%;
+    width : 100%;
+    display : flex;
+    justify-content : space-between;
+    /* background-color: blue; */
+}
+
+.bottom-left , .bottom-right {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+/* bottom left icons */
+
+.bottom-left .fas {
+    margin-left: 20px;
+}
+
+/* bottom right icons */
+
+.bottom-right .fas {
+    margin-right : 20px;
+    margin-left : 20px;
+}
+
+/* Icons */
+.fas {
+    font-size: 150%;
+    cursor: pointer;
+}
+
+/* Time Container */
+.time-container {
+    margin-left : 20px;
+    color : #fff;
+}
+
+/* Speed  */
+.speed:focus {
+    outline : none;
+}
+
+/* Volume Range */
+
+.volume {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.volume-icon-container {
+    position: relative;
+}
+
+.volume-range {
+    height : 8px;
+    width : 70px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top : 60px;
+    left : 100px;
+    cursor : pointer;
+}
+
+.volume-bar {
+    width : 100%;
+    height : 100%;
+    background-color: purple;
+    border-radius: 4px;
+    cursor : pointer;
 }
