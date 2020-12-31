@@ -55,7 +55,7 @@ const muteUnmute = () => {
     else {
         video.muted = false;
         volumeBar.style.width = `${volume * 100}%`;
-        if(volume > 0.7) {
+        if(volume >= 0.7) {
             volumeBtn.classList.replace("fa-volume-off" , "fa-volume-up");
         }else if(volume > 0.1 && volume < 0.7) {
             volumeBtn.classList.replace("fa-volume-off" , "fa-volume-down");
@@ -134,7 +134,7 @@ const updateVolumeProgress = (event) => {
 
     video.volume = volume;
 
-    if(volume > 0.7) {
+    if(volume >= 0.7) {
         volumeBtn.className = '';
         volumeBtn.classList.add("fas" , "fa-volume-up");
     }else if(volume > 0.1 && volume < 0.7) {
